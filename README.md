@@ -1,7 +1,6 @@
 <h1 align="center">Hii there I'm Anant Singh</h1>
 <h3 align="center">A growing software engineer who resides in India</h3>
 
-<img align="right" alt="coding gif" width="400" src="https://i.pinimg.com/originals/45/21/b7/4521b7b2e59c1455b15247f1704abcb8.gif">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=anakrit&label=Profile%20views&color=0e75b6&style=flat" alt="anakrit" /> </p>
 
