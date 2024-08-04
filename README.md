@@ -29,6 +29,6 @@
 <br>
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=anakrit&show_icons=true&locale=en&layout=compact" alt="anakrit" /></p><br><br><br>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api?username=anakrit&show_icons=true&locale=en" width="390" alt="anakrit" /></p>
+<p><img align="right" src="https://github-readme-stats.vercel.app/api?username=anakrit&show_icons=true&locale=en" width="390" alt="anakrit" /></p>
 
 <p><img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=anakrit&" width="400" alt="anakrit" /></p>
