@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CuraLink | Researcher Dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="dashboard">
+      <header class="dashboard__header">
+        <div>
+          <p class="badge">Researcher workspace</p>
+          <h1 id="researcher-greeting">Welcome back</h1>
+          <p id="researcher-summary" class="text-muted"></p>
+        </div>
+        <div class="cta-group">
+          <a class="cta secondary" href="researcher-onboarding.html">Edit profile</a>
+          <a class="cta primary" href="researcher-favorites.html">View favorites</a>
+        </div>
+      </header>
+
+      <section class="dashboard__summary">
+        <article class="summary-card">
+          <h3>Potential collaborators</h3>
+          <span id="collaborator-count">0</span>
+          <p>Experts working on similar specialties and interests.</p>
+        </article>
+        <article class="summary-card">
+          <h3>Relevant trials</h3>
+          <span id="researcher-trial-count">0</span>
+          <p>Studies aligned to your research interests.</p>
+        </article>
+        <article class="summary-card">
+          <h3>Forum threads</h3>
+          <span id="forum-count">0</span>
+          <p>Questions from patients waiting for your perspective.</p>
+        </article>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>Collaborators to connect with</h2>
+          <div class="filter-bar">
+            <input id="collaborator-search" type="search" placeholder="Search by specialty" />
+          </div>
+        </div>
+        <div id="collaborators-list" class="list-grid"></div>
+        <div id="collaborators-empty" class="empty-state" hidden>
+          No collaborators match your filters just yet.
+        </div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>Manage clinical trials</h2>
+          <div class="filter-bar">
+            <input id="researcher-trial-search" type="search" placeholder="Find a trial" />
+          </div>
+        </div>
+        <div id="researcher-trials-list" class="list-grid"></div>
+        <div id="researcher-trials-empty" class="empty-state" hidden>
+          No trials match the criteria yet.
+        </div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>Publications to reference</h2>
+          <input
+            id="researcher-publication-search"
+            class="filter-bar"
+            type="search"
+            placeholder="Search publications"
+          />
+        </div>
+        <div id="researcher-publications-list" class="list-grid"></div>
+        <div id="researcher-publications-empty" class="empty-state" hidden>
+          No references match your interests yet.
+        </div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>Forums to engage</h2>
+        </div>
+        <div id="researcher-forums-list" class="list-grid"></div>
+        <div id="researcher-forums-empty" class="empty-state" hidden>
+          No new posts yet. Invite your patients to start a conversation.
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/researcher-dashboard.js" type="module"></script>
+  </body>
+</html>

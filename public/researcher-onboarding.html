@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CuraLink | Researcher Onboarding</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="form-layout">
+      <section class="form-card">
+        <h1>Share your expertise</h1>
+        <p>
+          Let CuraLink highlight the trials, collaborators, and forums aligned with your
+          research interests.
+        </p>
+        <form id="researcher-onboarding-form" novalidate>
+          <div class="form-grid">
+            <label>
+              Full name
+              <input type="text" name="name" placeholder="Dr. Jane Lee" required />
+            </label>
+            <label>
+              Institutional email
+              <input type="email" name="email" placeholder="jane@university.edu" required />
+            </label>
+            <label>
+              Institution or lab
+              <input type="text" name="organization" placeholder="Stanford Medicine" />
+            </label>
+            <label>
+              Primary specialties
+              <input type="text" name="specialties" placeholder="Oncology, Immunology" />
+            </label>
+            <label>
+              Research interests
+              <textarea
+                name="interests"
+                placeholder="Immunotherapy, digital biomarkers, patient-reported outcomes"
+                required
+              ></textarea>
+            </label>
+            <label>
+              Meeting availability
+              <select name="availability">
+                <option value="open">Open to meeting requests</option>
+                <option value="limited">Limited availability</option>
+                <option value="closed">Not accepting meetings</option>
+              </select>
+            </label>
+            <label>
+              ORCID (optional)
+              <input type="url" name="orcid" placeholder="https://orcid.org/0000-0000-0000-0000" />
+            </label>
+            <label>
+              ResearchGate (optional)
+              <input type="url" name="researchgate" placeholder="https://www.researchgate.net/profile/" />
+            </label>
+          </div>
+          <div class="button-row">
+            <button class="primary" type="submit">Create my researcher workspace</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/researcher-onboarding.js" type="module"></script>
+  </body>
+</html>

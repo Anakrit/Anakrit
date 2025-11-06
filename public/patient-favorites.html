@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CuraLink | Patient Favorites</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="dashboard">
+      <header class="dashboard__header">
+        <div>
+          <p class="badge">Patient workspace</p>
+          <h1>My favorites</h1>
+          <p>Keep track of the trials, publications, and experts that inspire you.</p>
+        </div>
+        <a class="cta secondary" href="patient-dashboard.html">Back to dashboard</a>
+      </header>
+
+      <section>
+        <div class="section-heading">
+          <h2>Health experts</h2>
+        </div>
+        <div id="favorites-experts" class="list-grid"></div>
+        <div id="favorites-experts-empty" class="empty-state" hidden>
+          Save an expert to see them here.
+        </div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>Clinical trials</h2>
+        </div>
+        <div id="favorites-trials" class="list-grid"></div>
+        <div id="favorites-trials-empty" class="empty-state" hidden>
+          Save a trial to revisit it later.
+        </div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>Publications</h2>
+        </div>
+        <div id="favorites-publications" class="list-grid"></div>
+        <div id="favorites-publications-empty" class="empty-state" hidden>
+          Save a publication to continue reading.
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/patient-favorites.js" type="module"></script>
+  </body>
+</html>

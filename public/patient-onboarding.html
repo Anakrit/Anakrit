@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CuraLink | Patient Onboarding</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="form-layout">
+      <section class="form-card">
+        <h1>Tell us about your health journey</h1>
+        <p>
+          Share your condition or symptoms in your own words. CuraLink will personalize
+          publications, experts, and clinical trials just for you.
+        </p>
+        <form id="patient-onboarding-form" novalidate>
+          <div class="form-grid">
+            <label>
+              Your full name
+              <input type="text" name="name" placeholder="Alex Morgan" required />
+            </label>
+            <label>
+              Preferred email
+              <input type="email" name="email" placeholder="alex@email.com" required />
+            </label>
+            <label>
+              City and country
+              <input type="text" name="location" placeholder="Boston, USA" />
+            </label>
+            <label>
+              Condition or symptoms
+              <textarea
+                name="condition"
+                placeholder="I have been diagnosed with glioblastoma and looking for new clinical trials."
+                required
+              ></textarea>
+            </label>
+            <label>
+              Add specific conditions (optional)
+              <input
+                type="text"
+                name="conditions"
+                placeholder="Glioma, Brain Cancer"
+              />
+            </label>
+            <label>
+              Distance preference
+              <select name="distance">
+                <option value="global">Show global experts</option>
+                <option value="nearby">Prioritize nearby experts</option>
+              </select>
+            </label>
+          </div>
+          <div class="button-row">
+            <button class="primary" type="submit">Create my patient profile</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/patient-onboarding.js" type="module"></script>
+  </body>
+</html>

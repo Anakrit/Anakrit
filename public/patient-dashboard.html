@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CuraLink | Patient Dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="dashboard">
+      <header class="dashboard__header">
+        <div>
+          <p class="badge">Patient workspace</p>
+          <h1 id="patient-greeting">Welcome back</h1>
+          <p id="patient-summary" class="text-muted"></p>
+        </div>
+        <div class="cta-group">
+          <a class="cta secondary" href="patient-onboarding.html">Edit profile</a>
+          <a class="cta primary" href="patient-favorites.html">View favorites</a>
+        </div>
+      </header>
+
+      <section class="dashboard__summary">
+        <article class="summary-card">
+          <h3>Recommended experts</h3>
+          <span id="expert-count">0</span>
+          <p>Specialists matched to your conditions and distance preference.</p>
+        </article>
+        <article class="summary-card">
+          <h3>Clinical trials</h3>
+          <span id="trial-count">0</span>
+          <p>Studies you can explore right now.</p>
+        </article>
+        <article class="summary-card">
+          <h3>New publications</h3>
+          <span id="publication-count">0</span>
+          <p>Plain-language summaries from trusted journals.</p>
+        </article>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>Recommended health experts</h2>
+          <div class="filter-bar">
+            <select id="expert-location-filter">
+              <option value="all">All locations</option>
+              <option value="nearby">My location</option>
+              <option value="global">Global</option>
+            </select>
+            <input id="expert-search" type="search" placeholder="Search by specialty" />
+          </div>
+        </div>
+        <div id="experts-list" class="list-grid"></div>
+        <div id="experts-empty" class="empty-state" hidden>
+          No experts match your filters yet. Try expanding your search.
+        </div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>Clinical trials for you</h2>
+          <div class="filter-bar">
+            <select id="trial-status-filter">
+              <option value="all">Any status</option>
+              <option value="Recruiting">Recruiting</option>
+              <option value="Active, not recruiting">Active, not recruiting</option>
+            </select>
+            <input id="trial-search" type="search" placeholder="Keyword or condition" />
+          </div>
+        </div>
+        <div id="trials-list" class="list-grid"></div>
+        <div id="trials-empty" class="empty-state" hidden>
+          No trials match your filters. Check back soon.
+        </div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>Publications to read next</h2>
+          <input
+            id="publication-search"
+            class="filter-bar"
+            type="search"
+            placeholder="Search publications"
+          />
+        </div>
+        <div id="publications-list" class="list-grid"></div>
+        <div id="publications-empty" class="empty-state" hidden>
+          No publications found for your interests yet.
+        </div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>Patient forums</h2>
+        </div>
+        <div id="forums-list" class="list-grid"></div>
+        <div id="forums-empty" class="empty-state" hidden>
+          No discussions yet. Check back after researchers respond to community prompts.
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/common.js"></script>
+    <script type="module" src="assets/js/patient-dashboard.js"></script>
+  </body>
+</html>
