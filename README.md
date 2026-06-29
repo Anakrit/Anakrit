@@ -10,7 +10,7 @@
 
 - 📫 How to reach me **anant.cs.official@gmail.com**
 
-- 📄 Know about my experiences [https://anant-singh.tiiny.site](https://anant-singh.tiiny.site)
+- 📄 Know about my experiences [https://anant-singh.tiiny.site](https://anant-singh.tiiny.site/)
 
 - ⚡ Fun fact **I just dive into anything and later find out that it's not my thing😂**
 
