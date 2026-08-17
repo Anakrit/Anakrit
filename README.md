@@ -4,7 +4,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=anakrit&label=Profile%20views&color=0e75b6&style=flat" alt="anakrit" /> </p>
 
-- 🌱 I’m currently learning **App Development**
+- 🌱 I’m currently learning **AI ML**
 
 - 💬 Ask me about **Full stack Development**
 
